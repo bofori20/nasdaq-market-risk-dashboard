@@ -21,12 +21,12 @@ local_css("style/style.css")
 
 # --- LOAD ASSETS -----
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-img_contact_form = Image.open("/Users/bryt/Desktop/MSDS/dstc691_capstone_applied_data_science/webpage/images/gradient.png")
-img_lottie_animation = Image.open("/Users/bryt/Desktop/MSDS/dstc691_capstone_applied_data_science/webpage/images/IMG_3123.png")
-img_contact_form1 = Image.open("/Users/bryt/Desktop/MSDS/dstc691_capstone_applied_data_science/webpage/images/download-3.png")
-img_contact_form2 = Image.open("/Users/bryt/Desktop/MSDS/dstc691_capstone_applied_data_science/webpage/images/titanic.png")
-img_contact_form3 = Image.open("/Users/bryt/Desktop/MSDS/dstc691_capstone_applied_data_science/webpage/images/nasdaq.png")
-img_contact_form4 = Image.open("/Users/bryt/Desktop/MSDS/dstc691_capstone_applied_data_science/webpage/images/download-1.png")
+img_contact_form = Image.open("images/gradient.png")
+img_lottie_animation = Image.open("images/IMG_3123.png")
+img_contact_form1 = Image.open("images/download-3.png")
+img_contact_form2 = Image.open("images/titanic.png")
+img_contact_form3 = Image.open("images/nasdaq.png")
+img_contact_form4 = Image.open("images/download-1.png")
 
 # ------ BIOGRAPHICAL HOMEPAGE ------
      
