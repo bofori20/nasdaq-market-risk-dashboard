@@ -1,0 +1,8 @@
+*.h5
+*.ckpt
+*.csv
+*.json
+*.md
+venv/
+__pycache__/
+.git/
