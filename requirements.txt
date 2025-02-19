@@ -45,3 +45,4 @@ streamlit-lottie
 joblib
 matplotlib
 yfinance
+scikit-learn
