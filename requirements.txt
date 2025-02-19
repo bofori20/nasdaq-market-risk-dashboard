@@ -43,3 +43,4 @@ pillow
 requests
 streamlit-lottie
 joblib
+matplotlib
