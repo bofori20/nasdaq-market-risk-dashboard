@@ -42,3 +42,4 @@ zipp==3.20.2
 pillow
 requests
 streamlit-lottie
+joblib
