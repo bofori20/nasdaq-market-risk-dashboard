@@ -121,18 +121,14 @@ with st.container():
         st.header("Education")
         st.subheader("Master of Science in Data Science")
         st.write("**Institution:** Eastern University")
-        st.write("**Years:** Completion - December 2024")
+        st.write("**Years:** January 2024 - December 2024")
         
         st.subheader("MBA in Finance")
         st.write("**Institution:** Lincoln University")
-        st.write("**Years:** 2013 - 2015")
+        st.write("**Years:** 2013 - 2018")
         st.write("**Achievements:**")
         st.write("- Best Graduating Thesis")
-        
-        st.subheader("Bachelor of Arts in Psychology")
-        st.write("**Institution:** University of Ghana")
-        st.write("**Years:** 2002 - 2006")
-        
+              
         # Work Experience Section
         st.header("Work Experience")
         st.subheader("Residential Loan Administrator")
@@ -143,8 +139,8 @@ with st.container():
         st.write("- Utilized SQL and Python to automate financial reporting, reducing manual work by 30%.")
         
         st.subheader("Relationship Banker")
-        st.write("**Company:** Union Bank")
-        st.write("**Years:** January 2019 - July 2021")
+        st.write("**Company:** MUFG Union Bank")
+        st.write("**Years:** January 2019 - April 2021")
         st.write("**Responsibilities:**")
         st.write("- Proactively assess clients' needs and recommend appropriate products")
         st.write("- Responsible for managing, retaining and growing book of business")
