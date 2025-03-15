@@ -136,11 +136,11 @@ with st.container():
         # Work Experience Section
         st.header("Work Experience")
         st.subheader("Residential Loan Administrator")
-        st.write("**Company:** JP Morgan Chase")
-        st.write("**Years:** July 2021 - August 2024")
+        st.write("**Company:** First Republic Bank")
+        st.write("**Years:** May 2021 - January 2024")
         st.write("**Responsibilities:**")
-        st.write("- Documents review and due diligence for loan closings.")
-        st.write("- Coordinate with borrowers, escrow and funders on loan conditions.")
+        st.write("- Managed loan underwriting and risk assessment, leveraging data-driven insights.")
+        st.write("- Utilized SQL and Python to automate financial reporting, reducing manual work by 30%.")
         
         st.subheader("Relationship Banker")
         st.write("**Company:** Union Bank")
