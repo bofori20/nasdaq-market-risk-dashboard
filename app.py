@@ -20,7 +20,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # --- LOAD ASSETS -----
-lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
+#lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 img_contact_form = Image.open("images/gradient.png")
 #img_lottie_animation = Image.open("images/IMG_3123.png")
 img_contact_form1 = Image.open("images/download-3.png")
@@ -36,18 +36,14 @@ with st.container():
     with col1:
         st.image(img_contact_form, width=1000)
 #    st.image("img_contact_form", use_column_width=True)
-    st.subheader("Welcome to My Data Science Capstone Project")
-    st.write("""In this project, I explored stock price prediction leveraging 
-            cutting-edge tools and techniques to uncover valuable insights. My work showcases the skills 
-            I’ve developed, including:
+    st.subheader("Welcome!")
+    st.write("""Welcome to my data science portfolio! Here, you’ll find practical projects that demonstrate my ability to turn data into actionable insights. I invite you to explore two featured projects:
 
-            Data Wrangling and Preprocessing: Cleaning and preparing raw datasets for analysis.
-            Exploratory Data Analysis: Identifying patterns and trends through visualization.
-            Model Development and Evaluation: Building robust machine learning models.
-            Storytelling with Data: Crafting compelling narratives to communicate findings.
-            Feel free to explore the sections below to dive deeper into my methodology, findings, 
-            and takeaways. Whether you're a fellow data enthusiast, recruiter, or simply curious, 
-            I hope you find this project insightful and inspiring!
+📈 Stock Price Predictor – A deep learning model that leverages historical financial data to forecast future stock prices, showcasing my skills in time-series analysis, data preprocessing, and model deployment using Streamlit.
+
+🚢 Titanic Survival Predictor – A classification model built with machine learning to predict passenger survival on the Titanic, demonstrating my proficiency in feature engineering, model interpretation, and building interactive web applications using Flask and Streamlit.
+
+These projects reflect my passion for solving real-world problems through data and highlight my technical range—from data wrangling and model building to deploying interactive applications. Happy exploring!
             """)
     # st.write("[Learn More >](https://mysock predictor.com)")
     
@@ -97,15 +93,8 @@ with st.container():
         
  
 #        st.markdown("[Watch video...](https://presentation video)")
-# ---- General Page ---- 
-with st.container():
-    st.title("General Projects Page")
-
-# Introduction
-st.write("Welcome to my General Projects page! Here, you can explore some of the projects I have worked on.")
-
 # Projects Section
-st.header("Project: The titanic survival predictor")
+st.header("The titanic survival predictor")
 
 # Project 1
 st.write("A predictor of survival in the titanic considering age, sex and class of passengers")
