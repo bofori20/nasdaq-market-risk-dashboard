@@ -58,57 +58,59 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("Projects")
-        st.write("#Titanic Survival Predictor#")
-        st.write(
-            """
-Overview
-The Titanic Survival Predictor is a machine learning web application designed to predict 
-the likelihood of survival for a passenger aboard the Titanic. Built as a classification problem, 
-this project explores the use of supervised learning to draw meaningful insights from historical 
-data and deliver real-time predictions through a user-friendly interface.
+        st.title("Projects")
+        st.header("Titanic Survival Predictor")
 
-Objectives
-Develop a predictive model to estimate survival chances based on key passenger attributes.
-Demonstrate feature engineering, model selection, and evaluation skills.
-Deploy an interactive web app using Flask and Streamlit for user engagement.
-
-
-Key Features
-User Inputs: Users provide inputs such as age, sex, and passenger class.
-Preprocessing Pipeline: Inputs are encoded into features compatible with the trained model.
-Prediction Output: The model outputs a survival probability, helping users understand how likely a passenger was to survive.
-Model: A logistic regression or neural network model trained on the classic Titanic dataset from Kaggle.
-
-Highlights
-Feature Engineering: Transformed categorical variables like sex and passenger class into binary indicators.
-Model Training: Achieved high accuracy through cross-validation and hyperparameter tuning.
-Deployment: Two versions of the application were built—one using Flask for traditional web routing, and another 
-with Streamlit for rapid prototyping and interactivity.
-
-Learning Outcomes
-Gained hands-on experience building classification models from end to end.
-Learned to translate raw data into actionable predictions using machine learning.
-Practiced deploying machine learning models as fully functional web apps.
-Strengthened understanding of model interpretability and user-centric design.
-            
-            """
-        )
- #       st.write("[My Resume >](https://google.fjnskjnf.com)")
-    with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
-        
- 
-#        st.markdown("[Watch video...](https://presentation video)")
-# Projects Section
-st.header("The titanic survival predictor")
-
-# Project 1
-st.write("A predictor of survival in the titanic considering age, sex and class of passengers")
 # Creating columns for centering the image
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     st.image(img_contact_form2, width=700)
+st.subheader("Overview")
+st.write( """
+The Titanic Survival Predictor is a machine learning web application designed to predict 
+the likelihood of survival for a passenger aboard the Titanic. Built as a classification problem, 
+this project explores the use of supervised learning to draw meaningful insights from historical 
+data and deliver real-time predictions through a user-friendly interface.
+""")
+
+st.subheader("Objectives")
+st.write("""
+Develop a predictive model to estimate survival chances based on key passenger attributes.
+Demonstrate feature engineering, model selection, and evaluation skills.
+Deploy an interactive web app using Flask and Streamlit for user engagement.
+""")
+
+st.subheader("Key Features")
+st.write("""
+User Inputs: Users provide inputs such as age, sex, and passenger class.
+Preprocessing Pipeline: Inputs are encoded into features compatible with the trained model.
+Prediction Output: The model outputs a survival probability, helping users understand how likely a passenger was to survive.
+Model: A logistic regression or neural network model trained on the classic Titanic dataset from Kaggle.
+""")
+
+st.subheader("Highlights")
+st.write("""
+Feature Engineering: Transformed categorical variables like sex and passenger class into binary indicators.
+Model Training: Achieved high accuracy through cross-validation and hyperparameter tuning.
+Deployment: Two versions of the application were built—one using Flask for traditional web routing, and another 
+with Streamlit for rapid prototyping and interactivity.
+""")
+
+st.subheader("Learning Outcomes")
+st.write("""
+Gained hands-on experience building classification models from end to end.
+Learned to translate raw data into actionable predictions using machine learning.
+Practiced deploying machine learning models as fully functional web apps.
+Strengthened understanding of model interpretability and user-centric design.
+""")
+        
+ #st.write("[My Resume >](https://google.fjnskjnf.com)")
+#with right_column:
+ #   st_lottie(lottie_coding, height=300, key="coding")
+        
+ 
+#        st.markdown("[Watch video...](https://presentation video)")
+# Projects Section
 
 import pandas as pd
 import joblib
@@ -178,12 +180,11 @@ if st.button("Predict Survival Probability"):
 
 
 # Add more projects as needed
-st.write("---")
-st.write("Thank you for exploring my project! Feel free to reach out if you have any questions or would like to collaborate.")
+
 
 
 # Title
-st.title("This Project")
+st.title("Stock Price Predictor")
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     st.image(img_contact_form3, width=1000)
@@ -278,6 +279,9 @@ if st.button("Load and Predict"):
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
+        
+st.write("---")
+st.write("Thank you for exploring my project! Feel free to reach out if you have any questions or would like to collaborate.")
 
 
 # ---- Contact Section ----
