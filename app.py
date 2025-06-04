@@ -22,7 +22,7 @@ local_css("style/style.css")
 # --- LOAD ASSETS -----
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 img_contact_form = Image.open("images/gradient.png")
-img_lottie_animation = Image.open("images/IMG_3123.png")
+#img_lottie_animation = Image.open("images/IMG_3123.png")
 img_contact_form1 = Image.open("images/download-3.png")
 img_contact_form2 = Image.open("images/titanic.png")
 img_contact_form3 = Image.open("images/nasdaq.png")
@@ -37,12 +37,7 @@ with st.container():
         st.image(img_contact_form, width=1000)
 #    st.image("img_contact_form", use_column_width=True)
     st.subheader("Welcome to My Data Science Capstone Project")
-    st.write("""Hi there! I’m Bright Ofori, a data scientist passionate about transforming data into actionable
-             insights and solutions. This webpage is the culmination of my journey through Masters in Data Science
-             course, where I’ve applied my knowledge of data analysis, machine learning, and visualization 
-             to tackle a real-world challenge.
-
-            In this project, I explored stock price prediction leveraging 
+    st.write("""In this project, I explored stock price prediction leveraging 
             cutting-edge tools and techniques to uncover valuable insights. My work showcases the skills 
             I’ve developed, including:
 
@@ -100,55 +95,6 @@ with st.container():
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
         
-# ---- Resume Page ---- 
-with st.container():
-    st.write("---")
-    st.header("My Resume")
-    st.write("##")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_lottie_animation)
-    with text_column:
-        st.subheader("Passionate about solving complex problems and contributing to impactful data-driven decisions in a fast-paced environment")
-        st.header("Personal Details")
-        st.write("**Name:** Bright Ofori")
-        st.write("**Email:** bright.ofori.bo@gmail.com")
-        st.write("**Phone:** +1(510)926-7406")
-        st.write("**LinkedIn:** (https://linkedin.com/in/bright-ofori)")
-        # st.write("**Portfolio/Website:** [Your Website](https://yourwebsite.com)")
-        
-        # Education Section
-        st.header("Education")
-        st.subheader("Master of Science in Data Science")
-        st.write("**Institution:** Eastern University")
-        st.write("**Years:** January 2024 - December 2024")
-        
-        st.subheader("MBA in Finance")
-        st.write("**Institution:** Lincoln University")
-        st.write("**Years:** 2013 - 2018")
-        st.write("**Achievements:**")
-        st.write("- Best Graduating Thesis")
-              
-        # Work Experience Section
-        st.header("Work Experience")
-        st.subheader("Residential Loan Administrator")
-        st.write("**Company:** First Republic Bank")
-        st.write("**Years:** May 2021 - January 2024")
-        st.write("**Responsibilities:**")
-        st.write("- Managed loan underwriting and risk assessment, leveraging data-driven insights.")
-        st.write("- Utilized SQL and Python to automate financial reporting, reducing manual work by 30%.")
-        
-        st.subheader("Relationship Banker")
-        st.write("**Company:** MUFG Union Bank")
-        st.write("**Years:** January 2019 - April 2021")
-        st.write("**Responsibilities:**")
-        st.write("- Proactively assess clients' needs and recommend appropriate products")
-        st.write("- Responsible for managing, retaining and growing book of business")
-
-        # Footer
-        st.write("---")
-        st.write("Thank you for viewing my resume!")
-
  
 #        st.markdown("[Watch video...](https://presentation video)")
 # ---- General Page ---- 
