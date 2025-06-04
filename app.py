@@ -36,60 +36,61 @@ with st.container():
     with col1:
         st.image(img_contact_form, width=1000)
 #    st.image("img_contact_form", use_column_width=True)
-    st.subheader("Welcome!")
+    st.subheader("👋 Welcome!")
     st.write("""Welcome to my data science portfolio! Here, you’ll find practical projects that demonstrate my ability to 
              turn data into actionable insights. I invite you to explore two featured projects:
-
-📈 Stock Price Predictor – A deep learning model that leverages historical financial data to forecast 
-future stock prices, showcasing my skills in time-series analysis, data preprocessing, and model 
-deployment using Streamlit.
 
 🚢 Titanic Survival Predictor – A classification model built with machine learning to predict 
 passenger survival on the Titanic, demonstrating my proficiency in feature engineering, 
 model interpretation, and building interactive web applications using Flask and Streamlit.
+
+📈 Stock Price Predictor – A deep learning model that leverages historical financial data to forecast 
+future stock prices, showcasing my skills in time-series analysis, data preprocessing, and model 
+deployment using Streamlit.
 
 These projects reflect my passion for solving real-world problems through data and highlight my technical
 range—from data wrangling and model building to deploying interactive applications. Happy exploring!
             """)
     # st.write("[Learn More >](https://mysock predictor.com)")
     
-# ----- WHO I AM ----
+# ----- PROJECTS ----
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("Who I am")
-        st.write("##")
+        st.header("Projects")
+        st.write("#Titanic Survival Predictor#")
         st.write(
             """
-            Academic Background:
-            
-            I am a strong believer in the power of data and I have cultivated 
-            a strong foundation in Data Science through rigorous academic training.
-            My education has focused on applied data science and artificical intelligence 
-            complimented by practical experiences. These experiences have honed my analytical,
-            problem-solving and collaborative skills.
-            
-            Career Aspirations:
-            
-            I aspire to be a Data Scientist who can lead impactful projects.
-            I aim to work in environments that challenge me intellectually while allowing me to 
-            make meaningful contributions. Ultimately, I seek to align my career path with opportunities 
-            that improve lives and advance sustainable practices.
-            
-            Professional Interests:
-            
-            My professional interests include Machine Learning and healthcare innovation. 
-            I am particularly drawn to green technology and growth trajectory of the data 
-            science field. Additionally, I am passionate about fostering collaboration, 
-            ethical practices and innovation in my field.
-            
-            Personal Introduction:
-            
-            Beyond academics and career pursuits, I enjoy hiking and playing cards. One unique aspect 
-            of me is my ability to connect with diverse groups which has often helpe me develop tolerance 
-            and a increased sense of result for all cultures. These activities not only balance 
-            my professional life but also inspire creativity and resilience.
+Overview
+The Titanic Survival Predictor is a machine learning web application designed to predict 
+the likelihood of survival for a passenger aboard the Titanic. Built as a classification problem, 
+this project explores the use of supervised learning to draw meaningful insights from historical 
+data and deliver real-time predictions through a user-friendly interface.
+
+Objectives
+Develop a predictive model to estimate survival chances based on key passenger attributes.
+Demonstrate feature engineering, model selection, and evaluation skills.
+Deploy an interactive web app using Flask and Streamlit for user engagement.
+
+
+Key Features
+User Inputs: Users provide inputs such as age, sex, and passenger class.
+Preprocessing Pipeline: Inputs are encoded into features compatible with the trained model.
+Prediction Output: The model outputs a survival probability, helping users understand how likely a passenger was to survive.
+Model: A logistic regression or neural network model trained on the classic Titanic dataset from Kaggle.
+
+Highlights
+Feature Engineering: Transformed categorical variables like sex and passenger class into binary indicators.
+Model Training: Achieved high accuracy through cross-validation and hyperparameter tuning.
+Deployment: Two versions of the application were built—one using Flask for traditional web routing, and another 
+with Streamlit for rapid prototyping and interactivity.
+
+Learning Outcomes
+Gained hands-on experience building classification models from end to end.
+Learned to translate raw data into actionable predictions using machine learning.
+Practiced deploying machine learning models as fully functional web apps.
+Strengthened understanding of model interpretability and user-centric design.
             
             """
         )
