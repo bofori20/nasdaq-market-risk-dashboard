@@ -33,8 +33,15 @@ def calculate_moving_averages(data):
 
 def prepare_data_for_prediction(data):
     """Prepare data for LSTM model prediction."""
+    if 'Close' not in data.columns or data['Close'].dropna().empty:
+        raise ValueError("Stock data is empty or missing 'Close' prices.")
+
     splitting_len = int(len(data) * 0.8)
-    x_test = pd.DataFrame(data['Close'][splitting_len:])
+    x_test = pd.DataFrame(data['Close'][splitting_len:]).dropna()
+
+    if len(x_test) < 101:
+        raise ValueError(f"Not enough data to create sequences (found {len(x_test)} rows, need at least 101).")
+
     scaler = MinMaxScaler(feature_range=(0, 1))
     scaled_data = scaler.fit_transform(x_test)
 
@@ -43,7 +50,11 @@ def prepare_data_for_prediction(data):
         x_data.append(scaled_data[i - 100:i])
         y_data.append(scaled_data[i])
 
+    if not x_data or not y_data:
+        raise ValueError("Input features or target labels are empty after preparation.")
+
     return np.array(x_data), np.array(y_data), scaler, splitting_len
+
 
 def load_model_and_predict(x_data, scaler):
     """Load the model and predict."""
