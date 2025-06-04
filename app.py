@@ -37,13 +37,19 @@ with st.container():
         st.image(img_contact_form, width=1000)
 #    st.image("img_contact_form", use_column_width=True)
     st.subheader("Welcome!")
-    st.write("""Welcome to my data science portfolio! Here, you’ll find practical projects that demonstrate my ability to turn data into actionable insights. I invite you to explore two featured projects:
+    st.write("""Welcome to my data science portfolio! Here, you’ll find practical projects that demonstrate my ability to 
+             turn data into actionable insights. I invite you to explore two featured projects:
 
-📈 Stock Price Predictor – A deep learning model that leverages historical financial data to forecast future stock prices, showcasing my skills in time-series analysis, data preprocessing, and model deployment using Streamlit.
+📈 Stock Price Predictor – A deep learning model that leverages historical financial data to forecast 
+future stock prices, showcasing my skills in time-series analysis, data preprocessing, and model 
+deployment using Streamlit.
 
-🚢 Titanic Survival Predictor – A classification model built with machine learning to predict passenger survival on the Titanic, demonstrating my proficiency in feature engineering, model interpretation, and building interactive web applications using Flask and Streamlit.
+🚢 Titanic Survival Predictor – A classification model built with machine learning to predict 
+passenger survival on the Titanic, demonstrating my proficiency in feature engineering, 
+model interpretation, and building interactive web applications using Flask and Streamlit.
 
-These projects reflect my passion for solving real-world problems through data and highlight my technical range—from data wrangling and model building to deploying interactive applications. Happy exploring!
+These projects reflect my passion for solving real-world problems through data and highlight my technical
+range—from data wrangling and model building to deploying interactive applications. Happy exploring!
             """)
     # st.write("[Learn More >](https://mysock predictor.com)")
     
