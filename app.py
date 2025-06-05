@@ -179,8 +179,10 @@ if st.button("Predict Survival Probability"):
         st.error(f"Error in prediction: {e}")
 
 
-# Title
-st.header("Stock Price Predictor")
+# Project 2
+with st.container():
+    st.write("---")
+st.header("Project 2: Stock Price Predictor")
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     st.image(img_contact_form3, width=1000)
@@ -229,7 +231,7 @@ from web_stock_price_predictor import (
 )
 import matplotlib.pyplot as plt
 
-st.header("Stock Price Predictor App")
+st.subheader("Stock Price Predictor App")
 
 # Input stock symbol
 stock_id = st.text_input("Enter the Stock ID", "NDX")
@@ -277,7 +279,7 @@ if st.button("Load and Predict"):
         st.error(f"An error occurred: {e}")
         
 
-st.write("Thank you for exploring my project! Feel free to reach out if you have any questions or would like to collaborate.")
+st.write("Thank you for exploring my projects!")
 
 
 # ---- Contact Section ----
