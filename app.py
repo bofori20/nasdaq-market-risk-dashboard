@@ -279,10 +279,18 @@ if st.button("Load and Predict"):
         st.error(f"An error occurred: {e}")
         
 
-# Creating columns for centering the text
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-st.write("Thank you for exploring my projects!")
+st.markdown(
+    """
+    <p style='text-align: center; font-size:18px;'>
+        Thank you for exploring my projects.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+        
+
+
 
 
 
