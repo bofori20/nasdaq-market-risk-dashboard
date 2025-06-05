@@ -36,7 +36,7 @@ with st.container():
     with col1:
         st.image(img_contact_form, width=1000)
 #    st.image("img_contact_form", use_column_width=True)
-    st.subheader("👋 Welcome!")
+    st.header("👋 Welcome!")
     st.write("""Welcome to my data science portfolio! Here, you’ll find practical projects that demonstrate my ability to 
              turn data into actionable insights. I invite you to explore two featured projects:
 
@@ -59,7 +59,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
         st.title("Projects")
-        st.header("Titanic Survival Predictor")
+        st.header("Project 1: Titanic Survival Predictor")
 
 # Creating columns for centering the image
 col1, col2, col3 = st.columns([1, 2, 1])
@@ -163,7 +163,7 @@ def preprocess_data_and_predict(age, sex, pclass):
 # ---------------------------------------------- Streamlit Application ------------------------------------------------#
 # ---------------------------------------------------------------------------------------------------------------------#
 
-st.title("Titanic Survival Prediction")
+st.subheader("Titanic Survival Prediction")
 st.markdown("We trained a neural network to predict Titanic survival. Enter the passenger details below:")
 
 # Input form
@@ -179,18 +179,14 @@ if st.button("Predict Survival Probability"):
         st.error(f"Error in prediction: {e}")
 
 
-# Add more projects as needed
-
-
-
 # Title
-st.title("Stock Price Predictor")
+st.header("Stock Price Predictor")
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     st.image(img_contact_form3, width=1000)
 
 # Problem Statement
-st.header("Problem Being Addressed")
+st.subheader("Problem Being Addressed")
 st.write("""
 The primary goal of this project is to develop a machine learning model that predicts future stock prices 
 based on historical stock data. It is also to gain a deeper understanding of the factors that influence 
@@ -200,7 +196,7 @@ reliable tool that can help mitigate investment risks and maximize returns.
 """)
 
 # Approach
-st.header("Approach")
+st.subheader("Approach")
 st.write("""
 To address this problem, we applied a combination of data analysis, machine learning, and user-focused design. 
 The process involved:
@@ -210,7 +206,7 @@ The process involved:
 """)
 
 # Results
-st.header("Results")
+st.subheader("Results")
 st.write("""
 The solution has shown significant improvements in predictive accuracy. For example:
 - Demonstrated reliable predictions for test datasets.
@@ -218,7 +214,7 @@ These results highlight the potential to support decision-making and improve eff
 """)
 
 # Interactive Model Section
-st.header("Try the Model")
+st.subheader("Try the Model")
 st.write("""
 Use the interface below to interact with the deployed model. Provide the stock ID, and the model will generate predictions and analyses.
 """)
@@ -233,7 +229,7 @@ from web_stock_price_predictor import (
 )
 import matplotlib.pyplot as plt
 
-st.title("Stock Price Predictor App")
+st.header("Stock Price Predictor App")
 
 # Input stock symbol
 stock_id = st.text_input("Enter the Stock ID", "NDX")
@@ -280,7 +276,7 @@ if st.button("Load and Predict"):
     except Exception as e:
         st.error(f"An error occurred: {e}")
         
-st.write("---")
+
 st.write("Thank you for exploring my project! Feel free to reach out if you have any questions or would like to collaborate.")
 
 
