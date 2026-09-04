@@ -1,0 +1,4 @@
+model,evaluation_set,accuracy,balanced_accuracy,precision,recall,f1,true_negatives,false_positives,false_negatives,true_positives,roc_auc,decision_threshold
+majority_baseline,untouched_test,0.5364372469635628,0.5,0.5364372469635628,1.0,0.6982872200263505,0,229,0,265,,
+previous_direction_baseline,untouched_test,0.52834008097166,0.5259701738485623,0.5606060606060606,0.5584905660377358,0.5595463137996219,113,116,117,148,,
+random_forest,untouched_test,0.46356275303643724,0.4976270907143446,0.5,0.03018867924528302,0.05693950177935943,221,8,257,8,0.451231770618769,0.58
