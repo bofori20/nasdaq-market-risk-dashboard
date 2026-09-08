@@ -146,7 +146,7 @@ These are sample-relative analytical labels, not forecasts or trading signals.
 ## Repository Structure
 
 ```text
-web_stock_price_predictor/
+nasdaq-market-risk-dashboard/
 ├── app.py
 ├── risk_analysis.py
 ├── train_evaluate.py
@@ -177,8 +177,8 @@ web_stock_price_predictor/
 Clone and enter the repository:
 
 ```bash
-git clone https://github.com/bofori20/web_stock_price_predictor.git
-cd web_stock_price_predictor
+git clone https://github.com/bofori20/nasdaq-market-risk-dashboard.git
+cd nasdaq-market-risk-dashboard
 ```
 
 Create and activate a Python 3.11 environment:
